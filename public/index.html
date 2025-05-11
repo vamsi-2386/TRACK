@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="yesterday-count">
+           <h1>TaskTrack – Simplify Your Day, Amplify Your Focus</h1>
+        </div>        
+        <div class="todoapp">
+            <div class="header">
+            <h2>Todo List  <img src="./Images/todo.png" alt="To do list Icon"></h2>
+            <h2 id="date"></h2>
+        </div>
+            <div class="row">
+                <input type="text" id="ipbox" placeholder="Add Your Task">
+                <button onclick="addtask()">Add</button>
+            </div>
+            <ul id="lst">
+            </ul>
+        </div>
+        <div class="note">
+            <h3>*Note</h3>
+            <ul>
+                <li>- To add a task click on input box.</li>
+                <li>- To remove the task click on the circle on &emsp;right side of list.</li>
+                <li>- To make the task as completed click on &emsp;task</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../src/script.js"></script>
+</body>
+</html>

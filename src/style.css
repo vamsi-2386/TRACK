@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-135deg,#153167,#0143);
+    padding: 10px;
+}
+.todoapp{
+    width: 100%;
+    max-width: 540px;
+    margin: 50px auto 0;
+    background: white;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+.todoapp h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px ;
+    margin-left: 1.5rem;
+}
+.todoapp h2 img{
+    width: 30px;
+}
+.row{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 25px;
+border-radius: 30px;
+padding-left: 30px;
+background: linear-gradient(rgba(128,128,255,0.8));
+}
+input{
+flex: 1;
+outline: #f0f8ff;
+border: black;
+background: white;
+padding: 10px;
+}
+button{
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    background: #ff5940;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    user-select: none;;
+}
+ul li ::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../public/Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;;
+    left: 10px;
+     transform: translateY(-50%);
+}
+ul li.checked{
+    color: #999;
+    text-decoration: line-through;
+}
+ul li.checked ::before{
+    background-image: url(../public/Images/checked.jpeg);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span :hover{
+ background-color: red;
+}
+.note{
+    width: 400px;
+    color: rgb(68, 6, 58);
+    margin: 2rem auto;
+    font-size: 1.2rem;
+}
+.header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.yesterday-count {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #002765;
+    background: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+}
